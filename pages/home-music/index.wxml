@@ -1,0 +1,12 @@
+<!--pages/home-music/index.wxml-->
+<!-- 搜索框 -->
+<van-search disabled shape="round" background="#fafafa" bind:click-input="handleSearchClick" placeholder="搜索你喜欢的歌曲" />
+
+<!-- 轮播图 -->
+<swiper indicator-dots autoplay circular class="swiper-container" style="height: {{swiperHeightLoaded}}px;">
+  <block wx:for="{{bannerList}}" wx:key="targetId">
+    <swiper-item class="swiper-item">
+      <image class="swiper-image" mode="widthFix" bindload="handleImgLoaded" src="{{item.imageUrl}}" />
+    </swiper-item>
+  </block>
+</swiper>

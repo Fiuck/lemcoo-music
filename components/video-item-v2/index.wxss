@@ -1,0 +1,46 @@
+/* components/video-item-v2/index.wxss */
+.video-item {
+  padding: 20rpx 0;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.video-cover {
+  flex: none;
+  width: 42%;
+  border-radius: 10rpx;
+  /* padding-right: 20rpx; */
+}
+
+.video-item-info {
+  width: calc(100% - 120rpx);
+  padding-left: 20rpx;
+}
+
+.video-item-title {
+  font-size: 32rpx;
+  font-weight: 500;
+  /* padding-bottom: 16rpx; */
+  margin-bottom: 16rpx;
+
+  /* 显示两行 */
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -moz-box;
+  -moz-line-clamp: 2;
+  -moz-box-orient: vertical;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.video-item-creator {
+  font-size: 26rpx;
+  color: #6b6b6b;
+}

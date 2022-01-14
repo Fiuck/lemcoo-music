@@ -1,0 +1,8 @@
+<!--components/video-item-v2/index.wxml-->
+<view class="video-item">
+  <image src="{{item.coverUrl}}" class="video-cover" mode="widthFix"></image>
+  <view class="video-item-info">
+    <view class="video-item-title">{{item.title}}</view>
+    <view class="video-item-creator">{{item.creator[0].userName}}</view>
+  </view>
+</view>

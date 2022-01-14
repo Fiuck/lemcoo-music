@@ -1,0 +1,41 @@
+/**
+ * 格式化数量
+ * @param count 数量
+ */
+function formatCount(count) {
+  var counter = parseInt(count)
+  if (counter > 100000000) {
+    return (counter / 100000000).toFixed(1) + "亿"
+  } else if (counter > 10000) {
+    return (counter / 10000).toFixed(1) + "万"
+  } else {
+    return counter + ""
+  }
+}
+
+/**
+ * 格式化时长
+ * @param ms 毫秒
+ */
+function formatPlayTime(ms) {
+  var time = ms / 1000
+
+  var hour = Math.floor(time / 3600)
+  var minute = Math.floor(time / 60)
+  var second = time & 60
+
+  if (time >= 3600) {
+    return hour + ":" + minute + ":" + second
+  }
+  return padLeftZero(minute) + ":" + padLeftZero(second)
+}
+
+function padLeftZero(time) {
+  time = time + ""
+  return ("00" + time).slice(time.length)
+}
+
+module.exports = {
+  formatCount: formatCount,
+  formatPlayTime: formatPlayTime,
+}

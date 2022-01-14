@@ -1,0 +1,34 @@
+/* pages/video-detail/index.wxss */
+.video {
+  width: 100%;
+}
+
+.wrapper {
+  padding: 25rpx;
+}
+
+.video-info {
+  padding-bottom: 60rpx;
+}
+
+.video-title {
+  font-weight: 1000;
+  padding-bottom: 15rpx;
+  font-size: 35rpx;
+}
+
+.artist-name {
+  font-size: 26rpx;
+  color: #6b6b6b;
+  padding-bottom: 15rpx;
+}
+
+.play-info {
+  font-size: 26rpx;
+  color: #6b6b6b;
+}
+
+.recommend-title {
+  font-weight: 640;
+  padding-bottom: 20rpx;
+}
